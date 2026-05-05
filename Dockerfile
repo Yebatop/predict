@@ -7,4 +7,6 @@ RUN pip install --no-cache-dir -r requirements.txt aiogram
 
 COPY . .
 
+ENV PYTHONPATH=/app
+
 CMD ["python", "bot.py"]
